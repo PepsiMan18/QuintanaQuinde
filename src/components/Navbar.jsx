@@ -4,6 +4,7 @@ import logoImg from '../assets/quintanaquinde2.png';
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
   const location = useLocation();
   const navigate = useNavigate();
 
@@ -21,6 +22,7 @@ const Navbar = () => {
 
   const handleNavClick = (e, targetId) => {
     e.preventDefault();
+    setMenuOpen(false); // Cierra el menú al hacer clic
     if (location.pathname !== '/') {
       navigate('/#' + targetId);
     } else {
@@ -31,17 +33,30 @@ const Navbar = () => {
     }
   };
 
+  const handleLinkClick = () => {
+    setMenuOpen(false);
+    window.scrollTo(0,0);
+  };
+
   return (
     <nav className={`navbar fade-in ${scrolled ? 'scrolled' : ''}`}>
       <div className="container">
-        <Link to="/" className="navbar-logo" onClick={() => window.scrollTo(0,0)}>
+        <Link to="/" className="navbar-logo" onClick={handleLinkClick}>
           <img src={logoImg} alt="Quintana & Quinde Abogados" className="logo-image" />
         </Link>
-        <div className="navbar-links">
-          <Link to="/" onClick={() => window.scrollTo(0,0)}>Inicio</Link>
+
+        {/* Icono de Hamburguesa */}
+        <div className={`hamburger ${menuOpen ? 'active' : ''}`} onClick={() => setMenuOpen(!menuOpen)}>
+          <span className="bar"></span>
+          <span className="bar"></span>
+          <span className="bar"></span>
+        </div>
+
+        <div className={`navbar-links ${menuOpen ? 'active' : ''}`}>
+          <Link to="/" onClick={handleLinkClick}>Inicio</Link>
           <a href="#nosotros" onClick={(e) => handleNavClick(e, 'nosotros')}>Nosotros</a>
           <a href="#servicios" onClick={(e) => handleNavClick(e, 'servicios')}>Servicios</a>
-          <Link to="/areas-de-practica">Áreas de Práctica</Link>
+          <Link to="/areas-de-practica" onClick={handleLinkClick}>Áreas de Práctica</Link>
           <a href="#contacto" onClick={(e) => handleNavClick(e, 'contacto')}>Contacto</a>
         </div>
       </div>

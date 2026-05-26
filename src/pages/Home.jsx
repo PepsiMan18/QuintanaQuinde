@@ -4,6 +4,7 @@ import Hero from '../components/Hero';
 import AboutUs from '../components/AboutUs';
 import Stats from '../components/Stats';
 import Services from '../components/Services';
+import Testimonials from '../components/Testimonials';
 import Contact from '../components/Contact';
 
 const Home = () => {
@@ -30,6 +31,7 @@ const Home = () => {
       <AboutUs />
       <Stats />
       <Services />
+      <Testimonials />
       <Contact />
     </main>
   );

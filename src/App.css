@@ -526,6 +526,118 @@
   color: white;
 }
 
+/* ===== TESTIMONIALS ===== */
+.testimonials-section {
+  padding: var(--section-padding);
+  background-color: #f8fafc; /* Un gris muy tenue para diferenciar */
+  overflow: hidden;
+}
+
+.testimonials-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.testimonials-header .section-title {
+  color: var(--primary-navy);
+  margin-bottom: 0.5rem;
+}
+
+.testimonials-header .section-subtitle {
+  color: #6b7280;
+  font-size: 1.2rem;
+  font-family: var(--font-body);
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2.5rem;
+}
+
+.testimonial-card {
+  background: var(--bg-white);
+  padding: 2.5rem 2rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.4s ease;
+}
+
+.testimonials-section.is-visible .testimonial-card {
+  animation: slideUpFade 0.8s forwards;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+.quote-icon {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  font-size: 4rem;
+  color: rgba(194, 159, 99, 0.15); /* Accent gold semitransparente */
+  font-family: serif;
+  line-height: 1;
+}
+
+.testimonial-text {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #4b5563;
+  margin-bottom: 2rem;
+  font-style: italic;
+  position: relative;
+  z-index: 1;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-top: 1px solid #e5e7eb;
+  padding-top: 1.5rem;
+}
+
+.author-avatar {
+  width: 45px;
+  height: 45px;
+  background-color: var(--primary-navy);
+  color: var(--bg-white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-family: var(--font-heading);
+}
+
+.author-info h4 {
+  color: var(--primary-navy);
+  font-size: 1.05rem;
+  margin-bottom: 0.2rem;
+}
+
+.author-info span {
+  color: #6b7280;
+  font-size: 0.85rem;
+}
+
+.stars {
+  margin-left: auto;
+  color: var(--accent-gold);
+  letter-spacing: 2px;
+  font-size: 1rem;
+}
+
 /* ===== CONTACT ===== */
 .contact {
   padding: var(--section-padding);
@@ -1093,4 +1205,170 @@
 
 .stat-card:hover p {
   color: var(--primary-navy);
+}
+
+/* ==========================================================================
+   RESPONSIVE DESIGN (MÓVILES Y TABLETS)
+   ========================================================================== */
+
+/* --- HAMBURGER ICON --- */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.hamburger .bar {
+  height: 3px;
+  width: 100%;
+  background-color: var(--bg-white);
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+.navbar.scrolled .hamburger .bar {
+  background-color: var(--primary-navy);
+}
+
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
+}
+
+.navbar.scrolled .hamburger.active .bar {
+  background-color: var(--bg-white);
+}
+
+/* --- TABLETS Y MÓVILES GRANDES (Max 992px) --- */
+@media screen and (max-width: 992px) {
+  /* Navbar Mobile Menu */
+  .navbar .container {
+    flex-wrap: wrap;
+    position: relative;
+  }
+  .hamburger {
+    display: flex;
+  }
+  .navbar-links {
+    position: absolute;
+    top: 100%;
+    left: -5%; /* Asegura que cubra los bordes si hay padding */
+    width: 110%;
+    background-color: var(--primary-navy);
+    flex-direction: column;
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    align-items: center;
+  }
+  .navbar-links.active {
+    max-height: 400px;
+    padding: 1.5rem 0;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  }
+  .navbar-links a {
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    color: var(--bg-white);
+    margin: 0;
+  }
+  .navbar-links a::after {
+    display: none; /* Quitamos la línea dorada inferior en celular */
+  }
+  .navbar.scrolled .navbar-links a {
+    color: var(--bg-white); /* Siempre blanco en menú desplegable */
+  }
+  
+  /* Hero */
+  .hero h1 {
+    font-size: 3.5rem;
+  }
+  
+  /* Grids a 1 columna */
+  .about-grid, 
+  .contact-grid, 
+  .footer-top {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  
+  /* Stats a 2 columnas */
+  .stats-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  /* Servicios */
+  .service-card-new {
+    min-width: 320px;
+  }
+}
+
+/* --- MÓVILES PEQUEÑOS (Max 768px) --- */
+@media screen and (max-width: 768px) {
+  :root {
+    --section-padding: 4rem 1rem;
+  }
+  
+  .hero h1 {
+    font-size: 2.8rem;
+  }
+  
+  .section-title {
+    font-size: 2.2rem;
+  }
+  
+  /* Stats a 1 columna */
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .stat-card h3 {
+    font-size: 3rem;
+  }
+  
+  /* About Us */
+  .about-image {
+    min-height: 300px;
+  }
+  
+  .about-interactive-card {
+    padding: 2rem;
+  }
+  
+  /* Servicios */
+  .service-card-new {
+    min-width: 280px;
+  }
+  
+  .service-card-content h3 {
+    font-size: 1.4rem;
+  }
+  
+  /* Testimonios */
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  /* Contacto */
+  .contact-form {
+    padding: 2rem 1.5rem;
+  }
+  
+  /* Footer */
+  .footer-bottom {
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+  }
 }
