@@ -1504,8 +1504,14 @@
     width: 100%;
   }
 
+  .services-carousel {
+    gap: 1rem; /* Reducimos el espacio entre tarjetas en móviles */
+  }
+
   .service-card-new {
-    min-width: 280px;
+    flex: 0 0 75vw; /* Hace que la tarjeta ocupe el 75% del ancho, permitiendo que la siguiente "asome" */
+    min-width: 260px; /* Asegura un ancho mínimo en pantallas ultra pequeñas */
+    max-width: 320px; /* Evita que crezca demasiado en pantallas medianas/tablets */
   }
   
   .service-card-content h3 {
