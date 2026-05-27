@@ -980,6 +980,10 @@
 }
 
 @media screen and (max-width: 768px) {
+  .hero {
+    background-position: 85% center;
+  }
+
   .hero-content h1 {
     font-size: 3rem;
   }
