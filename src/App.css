@@ -981,7 +981,7 @@
 
 @media screen and (max-width: 768px) {
   .hero {
-    background-position: right center !important;
+    background-position: 75% center !important;
   }
 
   .hero-content h1 {
