@@ -107,8 +107,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 80%;
-  max-width: 800px;
+  width: 95%;
+  max-width: 1200px;
   opacity: 0.05; /* Marca de agua muy sutil */
   filter: brightness(0) invert(1);
   z-index: 1;
