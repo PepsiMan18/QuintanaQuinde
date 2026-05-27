@@ -1365,6 +1365,24 @@
   background-color: var(--bg-white);
 }
 
+/* --- LAPTOPS PEQUEÑAS / ZOOM (Max 1200px) --- */
+@media screen and (max-width: 1200px) {
+  .services-layout {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3rem;
+  }
+  
+  .services-info {
+    flex: none;
+    width: 100%;
+  }
+
+  .services-carousel-container {
+    width: 100%;
+  }
+}
+
 /* --- TABLETS Y MÓVILES GRANDES (Max 992px) --- */
 @media screen and (max-width: 992px) {
   /* Navbar Mobile Menu */
