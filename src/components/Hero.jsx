@@ -8,7 +8,6 @@ const Hero = () => {
       <img src={logoImg} alt="Watermark" className="hero-watermark" />
       <div className="container">
         <div className="hero-content">
-          <p className="hero-subtitle fade-in">Equipo de abogados profesionales</p>
           <h1 className="fade-in delay-1">
             Experiencia jurídica<br/>
             <span style={{ color: 'var(--accent-gold)' }}>con resultados.</span>
