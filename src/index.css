@@ -4,7 +4,7 @@
   --primary-navy-light: #1f2a47;
   --accent-gold: #c29f63;
   --accent-gold-hover: #d1b17a;
-  --text-dark: #1f2937;
+  --text-dark: #000000;
   --text-light: #f3f4f6;
   --bg-light: #fafafa;
   --bg-white: #ffffff;
@@ -36,6 +36,10 @@ body {
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+p {
+  text-align: justify;
 }
 
 h1, h2, h3, h4, h5, h6 {

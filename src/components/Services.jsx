@@ -5,6 +5,15 @@ import imgPenal from '../assets/derechopenal.jpg';
 import imgLaboral from '../assets/derecholaboral.jpg';
 import imgFamiliar from '../assets/derechofamiliar.jpg';
 import imgCorporativo from '../assets/derechocorporativo.jpg';
+import imgArbitraje from '../assets/arbitraje.png';
+import imgContrataciones from '../assets/contrataciones.jpg';
+import imgAdministrativo from '../assets/derechoadministrativo.jpg';
+import imgInmobiliario from '../assets/derechoinmobiliario.jpg';
+import imgMarcario from '../assets/derechomarcario.jpg';
+import imgNotarial from '../assets/derechonotarial.jpg';
+import imgProteccion from '../assets/derechoproteccion.jpg';
+import imgSocietario from '../assets/derechosocietario.jpg';
+import imgRecuperacion from '../assets/recuperacioncartera.jpg';
 
 const Services = () => {
   const carouselRef = useRef(null);
@@ -57,31 +66,20 @@ const Services = () => {
   };
 
   const servicesData = [
-    {
-      title: 'Derecho Civil',
-      image: imgCivil,
-      icon: '📄'
-    },
-    {
-      title: 'Derecho Penal',
-      image: imgPenal,
-      icon: '⚖️'
-    },
-    {
-      title: 'Derecho Laboral',
-      image: imgLaboral,
-      icon: '🤝'
-    },
-    {
-      title: 'Derecho de Familia',
-      image: imgFamiliar,
-      icon: '👨‍👩‍👧‍👦'
-    },
-    {
-      title: 'Derecho Corporativo',
-      image: imgCorporativo,
-      icon: '🏢'
-    }
+    { title: 'Arbitraje', image: imgArbitraje },
+    { title: 'Contrataciones con el Estado', image: imgContrataciones },
+    { title: 'Derecho Administrativo', image: imgAdministrativo },
+    { title: 'Derecho Civil', image: imgCivil },
+    { title: 'Derecho Corporativo y Empresarial', image: imgCorporativo },
+    { title: 'Derecho de Familia', image: imgFamiliar },
+    { title: 'Derecho Inmobiliario y de Construcción', image: imgInmobiliario },
+    { title: 'Derecho Laboral', image: imgLaboral },
+    { title: 'Derecho Marcario y Propiedad Intelectual', image: imgMarcario },
+    { title: 'Derecho Notarial y Registral', image: imgNotarial },
+    { title: 'Derecho Penal', image: imgPenal },
+    { title: 'Derecho Societario', image: imgSocietario },
+    { title: 'Derecho de Protección al Consumidor', image: imgProteccion },
+    { title: 'Recuperación de Cartera y Cobranza Judicial', image: imgRecuperacion },
   ];
 
   return (
@@ -90,15 +88,15 @@ const Services = () => {
       <div className="container services-layout">
         <div className="services-info">
           <p className="services-subtitle">Servicios Principales</p>
-          <h2 className="services-title">Diferentes casos,<br/>necesitan<br/>diferentes<br/>servicios</h2>
+          <h2 className="services-title">Diferentes casos,<br />necesitan<br />diferentes<br />servicios</h2>
           <div className="services-nav">
             <button className="nav-btn" onClick={scrollLeft}>←</button>
             <button className="nav-btn" onClick={scrollRight}>→</button>
           </div>
         </div>
         <div className="services-carousel-container">
-          <div 
-            className="services-carousel" 
+          <div
+            className="services-carousel"
             ref={carouselRef}
             onMouseDown={handleMouseDown}
             onMouseLeave={handleMouseLeave}
@@ -106,16 +104,15 @@ const Services = () => {
             onMouseMove={handleMouseMove}
           >
             {servicesData.map((service, index) => (
-              <div 
-                className="service-card-new" 
+              <div
+                className="service-card-new"
                 key={index}
                 style={{ backgroundImage: `url(${service.image})` }}
               >
                 <div className="service-card-overlay"></div>
-                <div className="service-icon-top">{service.icon}</div>
                 <div className="service-card-content">
                   <h3>{service.title}</h3>
-                  <Link to="/areas-de-practica" className="service-arrow-btn" style={{textDecoration: 'none', color: 'inherit'}}>
+                  <Link to="/areas-de-practica" className="service-arrow-btn" style={{ textDecoration: 'none', color: 'inherit' }}>
                     →
                   </Link>
                 </div>

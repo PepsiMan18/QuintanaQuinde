@@ -53,10 +53,7 @@ const Testimonials = () => {
   return (
     <section className={`testimonials-section ${isVisible ? 'is-visible' : ''}`} ref={sectionRef}>
       <div className="container">
-        <div className="testimonials-header">
-          <h2 className="section-title">Lo que dicen nuestros clientes</h2>
-          <p className="section-subtitle">Casos reales, resultados efectivos.</p>
-        </div>
+
         
         <div className="testimonials-grid">
           {testimonialsData.map((testimonial) => (

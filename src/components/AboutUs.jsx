@@ -1,12 +1,12 @@
 import React, { useEffect, useRef, useState } from 'react';
-import nosotrosImg from '../assets/nosotros.jpg';
+import nosotrosImg from '../assets/nosotros2.PNG';
 
 const aboutData = [
   {
-    title: "Estudio Jurídico Quintana & Quinde",
-    text1: "Somos un estudio jurídico fundado sobre los principios de la justicia, la igualdad y la fuerza. Nuestro emblema, compuesto por la espada y la balanza, representa nuestra dedicación para proteger los derechos de nuestros clientes con firmeza, asegurando siempre que la justicia trate a todos con equidad.",
-    text2: "Con años de experiencia en diversas áreas del derecho, nuestro equipo está preparado para brindarle la asesoría y representación legal de la más alta calidad, con un trato personalizado y transparente.",
-    bgColor: "var(--bg-white)", 
+    title: "Quintana & Quinde Abogados",
+    text1: "En Quintana&Quinde Abogados somos un estudio jurídico conformado por profesionales con sólida experiencia en asesoría legal corporativa, litigación judicial y solución estratégica de controversias. Brindamos servicios legales integrales y personalizados en diversas áreas del derecho, incluyendo derecho civil, penal, laboral, societario, corporativo, administrativo, inmobiliario, arbitraje y contrataciones con el Estado.",
+    text2: "Nuestro enfoque se basa en ofrecer soluciones legales eficientes, preventivas y estratégicas, orientadas a la protección de los intereses patrimoniales, empresariales y personales de nuestros clientes, priorizando siempre un servicio de alta calidad, atención personalizada y acompañamiento oportuno en cada etapa del proceso.",
+    bgColor: "var(--bg-white)",
     textColor: "var(--text-dark)",
     accentColor: "var(--accent-gold)"
   },
@@ -17,15 +17,6 @@ const aboutData = [
     bgColor: "var(--primary-navy)",
     textColor: "var(--bg-white)",
     accentColor: "var(--accent-gold)"
-  },
-  {
-    title: "¿Por qué debería elegirnos?",
-    text1: "Cuando te enfrentas a un problema legal, lo último que necesitas son palabras técnicas que no entiendes, promesas vacías o abogados que desaparecen apenas reciben el primer pago. En Quintana & Quinde Abogados rompemos con el viejo modelo de la abogacía tradicional para ofrecerte lo que realmente importa: estrategia, transparencia absoluta y resultados.",
-    text2: "No defendemos expedientes; defendemos a personas, familias y empresas que necesitan proteger lo que tanto esfuerzo les costó construir. Ya sea que estés protegiendo tu patrimonio, resolviendo un conflicto laboral o blindando tu negocio, aquí no encontrarás rodeos. Encontrarás un equipo de especialistas de élite que habla tu mismo idioma, que te dice la verdad desde la primera consulta y que diseña el camino legal exacto para ganar tu caso.",
-    text3: "Tu tranquilidad no puede esperar a que el sistema judicial decida ser eficiente. Toma el control de la situación hoy mismo.",
-    bgColor: "#2c3e50", // Un tono diferente de azul oscuro/gris
-    textColor: "var(--bg-white)",
-    accentColor: "#e67e22" // Un tono cobrizo/naranja para variar
   }
 ];
 
@@ -79,8 +70,8 @@ const AboutUs = () => {
   const activeData = aboutData[currentSlide];
 
   return (
-    <section 
-      id="nosotros" 
+    <section
+      id="nosotros"
       className={`about ${isVisible ? 'is-visible' : ''}`}
       ref={sectionRef}
     >
@@ -90,12 +81,12 @@ const AboutUs = () => {
           <div className="about-image">
             <img src={nosotrosImg} alt="Equipo Quintana y Quinde" />
           </div>
-          
-          <div 
+
+          <div
             className="about-interactive-card"
-            style={{ 
-              backgroundColor: activeData.bgColor, 
-              color: activeData.textColor 
+            style={{
+              backgroundColor: activeData.bgColor,
+              color: activeData.textColor
             }}
           >
             <div className={`about-content-inner ${isAnimating ? 'fade-out' : 'fade-in-active'}`}>
@@ -104,28 +95,28 @@ const AboutUs = () => {
               <p>{activeData.text2}</p>
               {activeData.text3 && <p style={{ fontWeight: 600, marginTop: '1rem' }}>{activeData.text3}</p>}
             </div>
-            
+
             <div className="about-controls">
               <div className="about-arrows">
                 <button className="about-btn prev" onClick={prevSlide} style={{ color: activeData.textColor, borderColor: activeData.textColor }}>←</button>
                 <button className="about-btn next" onClick={nextSlide} style={{ color: activeData.textColor, borderColor: activeData.textColor }}>→</button>
               </div>
-              
+
               <div className="about-dots">
                 {aboutData.map((_, idx) => (
-                  <span 
-                    key={idx} 
+                  <span
+                    key={idx}
                     className={`dot ${idx === currentSlide ? 'active' : ''}`}
                     onClick={() => {
-                        if(isAnimating || idx === currentSlide) return;
-                        setIsAnimating(true);
-                        setTimeout(() => {
-                            setCurrentSlide(idx);
-                            setIsAnimating(false);
-                        }, 400);
+                      if (isAnimating || idx === currentSlide) return;
+                      setIsAnimating(true);
+                      setTimeout(() => {
+                        setCurrentSlide(idx);
+                        setIsAnimating(false);
+                      }, 400);
                     }}
-                    style={{ 
-                      backgroundColor: idx === currentSlide ? activeData.accentColor : (activeData.textColor === 'var(--text-dark)' ? '#ccc' : '#555') 
+                    style={{
+                      backgroundColor: idx === currentSlide ? activeData.accentColor : (activeData.textColor === 'var(--text-dark)' ? '#ccc' : '#555')
                     }}
                   />
                 ))}
