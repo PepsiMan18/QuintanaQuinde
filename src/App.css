@@ -19,14 +19,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 110px;
+  height: 125px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   transition: height 0.4s ease;
 }
 
 .navbar.scrolled .container {
   border-bottom: none;
-  height: 90px;
+  height: 95px;
 }
 
 .navbar-logo {
@@ -36,13 +36,17 @@
 }
 
 .logo-image {
-  height: 85px; /* Aumentado para que sea más claro */
+  height: 105px;
   width: auto;
   object-fit: contain;
   /* El logo es azul oscuro, por lo que sobre el fondo oscuro desaparece.
      Usamos este filtro mágico de CSS para convertir todos los colores del logo en blanco puro: */
   filter: brightness(0) invert(1);
-  transition: transform 0.3s ease;
+  transition: all 0.4s ease;
+}
+
+.navbar.scrolled .logo-image {
+  height: 75px;
 }
 
 .logo-image:hover {
