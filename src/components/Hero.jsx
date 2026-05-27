@@ -10,8 +10,8 @@ const Hero = () => {
         <div className="hero-content">
           <p className="hero-subtitle fade-in">Equipo de abogados profesionales</p>
           <h1 className="fade-in delay-1">
-            Respuestas claras.<br/>
-            <span style={{ color: 'var(--accent-gold)' }}>Resultados efectivos.</span>
+            Experiencia jurídica<br/>
+            <span style={{ color: 'var(--accent-gold)' }}>con resultados.</span>
           </h1>
           <div className="hero-buttons fade-in delay-2">
             <a href="#nosotros" className="btn-pill">

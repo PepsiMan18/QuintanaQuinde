@@ -81,7 +81,7 @@
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background-image: url('./assets/lawyerbanner.jpg');
+  background-image: url('./assets/bannerinicio.png');
   background-size: cover;
   background-position: center;
   position: relative;
