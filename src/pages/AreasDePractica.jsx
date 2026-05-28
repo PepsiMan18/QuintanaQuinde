@@ -140,7 +140,7 @@ const AreasDePractica = () => {
             </div>
             <div className="practice-text-col">
               <h2>{practice.title}</h2>
-              <p className="practice-services-text" style={{ textAlign: 'justify', fontSize: '1.1rem', color: '#4b5563', lineHeight: '1.8' }}>
+              <p className="practice-services-text" style={{ textAlign: 'left', textWrap: 'pretty', fontSize: '1.1rem', color: '#4b5563', lineHeight: '1.8' }}>
                 {practice.description}
               </p>
             </div>
