@@ -126,7 +126,7 @@ const AreasDePractica = () => {
       <div className="practice-hero">
         <div className="container">
           <h1 className="fade-in">Áreas de Práctica</h1>
-          <p className="fade-in" style={{ animationDelay: '0.2s' }}>
+          <p className="fade-in" style={{ animationDelay: '0.2s', textAlign: 'center' }}>
             Brindamos soluciones legales estratégicas adaptadas a las necesidades específicas de cada cliente, garantizando seguridad y confianza en cada caso.
           </p>
         </div>
@@ -140,7 +140,7 @@ const AreasDePractica = () => {
             </div>
             <div className="practice-text-col">
               <h2>{practice.title}</h2>
-              <p className="practice-services-text" style={{ textAlign: 'left', fontSize: '1.1rem', color: '#4b5563', lineHeight: '1.8' }}>
+              <p className="practice-services-text" style={{ textAlign: 'justify', fontSize: '1.1rem', color: '#4b5563', lineHeight: '1.8' }}>
                 {practice.description}
               </p>
             </div>

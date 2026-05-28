@@ -390,8 +390,8 @@
   font-size: 1.1rem;
   line-height: 1.8;
   margin-bottom: 1.5rem;
-  text-align: left;
-  hyphens: auto;
+  text-align: justify;
+  hyphens: none;
 }
 
 .about-controls {
@@ -1259,6 +1259,7 @@
   font-size: 1.1rem;
   color: var(--text-light);
   line-height: 1.6;
+  text-align: center;
 }
 
 .stats-grid {
