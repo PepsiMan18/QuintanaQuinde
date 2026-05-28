@@ -72,14 +72,14 @@ const Services = () => {
     { title: 'Derecho Civil', image: imgCivil },
     { title: 'Derecho Corporativo y Empresarial', image: imgCorporativo },
     { title: 'Derecho de Familia', image: imgFamiliar },
-    { title: 'Derecho Inmobiliario y de Construcción', image: imgInmobiliario },
+    { title: 'Derecho Inmobiliario', image: imgInmobiliario },
     { title: 'Derecho Laboral', image: imgLaboral },
-    { title: 'Derecho Marcario y Propiedad Intelectual', image: imgMarcario },
-    { title: 'Derecho Notarial y Registral', image: imgNotarial },
+    { title: 'Derecho Marcario', image: imgMarcario },
+    { title: 'Derecho Notarial Registral', image: imgNotarial },
     { title: 'Derecho Penal', image: imgPenal },
     { title: 'Derecho Societario', image: imgSocietario },
-    { title: 'Derecho de Protección al Consumidor', image: imgProteccion },
-    { title: 'Recuperación de Cartera y Cobranza Judicial', image: imgRecuperacion },
+    { title: 'Derecho de Protección del Consumidor', image: imgProteccion },
+    { title: 'Recuperación de Carteras y Cobranza Judicial', image: imgRecuperacion },
   ];
 
   return (

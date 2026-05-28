@@ -19,164 +19,85 @@ const practices = [
     id: 'corporativo',
     title: 'Derecho Corporativo y Empresarial',
     image: imgCorporativo,
-    services: [
-      'Contratos.',
-      'Constitución, disolución y liquidación de empresas.',
-      'Fusiones y escisiones.',
-      'Mercado de capitales e inversiones.',
-      'Reorganización empresarial.',
-      'Derecho concursal.',
-      'Quiebra de personas naturales y jurídicas.',
-      'Compra de empresas extranjeras.',
-      'Competencia desleal.'
-    ]
+    description: 'Brindamos asesoría en práctica corporativa general y gestión empresarial, incluyendo estructuración de negocios, reorganizaciones empresariales, gobierno corporativo, contratos comerciales y acompañamiento legal permanente para empresas nacionales y extranjeras.'
   },
   {
     id: 'civil',
     title: 'Derecho Civil',
     image: imgCivil,
-    services: [
-      'Contratos civiles de compraventa, arrendamiento, etc.',
-      'Resolución de disputas contractuales.',
-      'Indemnizaciones por daños y perjuicios.',
-      'Sucesiones, testamentos y herencias.',
-      'Prescripción adquisitiva de dominio.'
-    ]
+    description: 'Ofrecemos asesoría y patrocinio en materia civil, incluyendo elaboración y revisión de contratos, responsabilidad civil, obligaciones, derecho de propiedad, indemnizaciones y resolución de controversias civiles.'
   },
   {
     id: 'penal',
     title: 'Derecho Penal',
     image: imgPenal,
-    services: [
-      'Defensa técnica en investigaciones fiscales.',
-      'Litigios penales y juicios orales.',
-      'Delitos contra el patrimonio (estafa, apropiación ilícita).',
-      'Delitos contra la administración pública.',
-      'Asesoría preventiva para empresas (Compliance Penal).'
-    ]
+    description: 'Ejercemos defensa y representación legal en procesos penales, tanto para personas naturales como jurídicas, en delitos económicos, patrimoniales y corporativos, así como en investigaciones fiscales y procesos judiciales.'
   },
   {
     id: 'laboral',
     title: 'Derecho Laboral',
     image: imgLaboral,
-    services: [
-      'Asesoría en contratación laboral.',
-      'Auditorías laborales y prevención de contingencias.',
-      'Acompañamiento en inspecciones de SUNAFIL.',
-      'Procesos judiciales por despido o beneficios sociales.',
-      'Negociaciones sindicales y pactos colectivos.'
-    ]
+    description: 'Brindamos asesoría a empleadores y trabajadores en materia laboral, incluyendo contratación de personal, elaboración de políticas internas, desvinculaciones, negociación laboral, inspecciones de SUNAFIL y patrocinio en procesos judiciales laborales.'
   },
   {
     id: 'familiar',
     title: 'Derecho de Familia',
     image: imgFamiliar,
-    services: [
-      'Procesos de divorcio por mutuo acuerdo y causal.',
-      'Pensión de alimentos y régimen de visitas.',
-      'Tenencia y custodia de menores.',
-      'Liquidación de sociedad de gananciales.',
-      'Reconocimiento y filiación.'
-    ]
+    description: 'Asesoramos en procesos de divorcio, tenencia, régimen de visitas, alimentos, sucesiones y otros asuntos vinculados al entorno familiar, procurando soluciones legales eficientes y orientadas a la protección de los derechos de nuestros clientes.'
   },
   {
     id: 'arbitraje',
     title: 'Arbitraje',
     image: imgArbitraje,
-    services: [
-      'Representación en procesos arbitrales institucionales y ad hoc.',
-      'Resolución alternativa de disputas.',
-      'Ejecución y anulación de laudos arbitrales.',
-      'Asesoría en redacción de convenios arbitrales.'
-    ]
+    description: 'Brindamos asesoría y patrocinio en procesos arbitrales nacionales e internacionales, representando a nuestros clientes en controversias comerciales, contractuales y societarias. Asimismo, participamos en etapas de negociación, conciliación y ejecución de laudos arbitrales, priorizando soluciones eficientes y estratégicas.'
   },
   {
     id: 'contrataciones',
     title: 'Contrataciones con el Estado',
     image: imgContrataciones,
-    services: [
-      'Asesoría integral en procesos de selección.',
-      'Elaboración y revisión de propuestas técnicas y económicas.',
-      'Recursos de apelación ante el Tribunal de Contrataciones.',
-      'Solución de controversias durante la ejecución contractual.'
-    ]
+    description: 'Ofrecemos asesoría integral en procedimientos de contratación pública, incluyendo participación en licitaciones y concursos públicos, ejecución contractual, resolución de controversias y defensa en procedimientos administrativos ante entidades del Estado y el Tribunal de Contrataciones del Estado.'
   },
   {
     id: 'administrativo',
     title: 'Derecho Administrativo',
     image: imgAdministrativo,
-    services: [
-      'Procedimientos sancionadores.',
-      'Obtención de licencias y permisos.',
-      'Defensa ante entidades públicas y municipales.',
-      'Recursos administrativos e impugnaciones.'
-    ]
+    description: 'Asesoramos a personas y empresas en procedimientos administrativos ante entidades públicas, procedimientos sancionadores, obtención de licencias, autorizaciones y permisos, así como en impugnaciones y recursos administrativos.'
   },
   {
     id: 'inmobiliario',
-    title: 'Derecho Inmobiliario y de Construcción',
+    title: 'Derecho Inmobiliario',
     image: imgInmobiliario,
-    services: [
-      'Saneamiento físico legal de predios.',
-      'Estudio de títulos y estructuración de proyectos inmobiliarios.',
-      'Contratos de obra y supervisión.',
-      'Resolución de controversias de construcción.'
-    ]
+    description: 'Ofrecemos asesoría legal en compraventa de inmuebles, saneamiento físico legal, arrendamientos, independizaciones, constitución de garantías y desarrollo de proyectos inmobiliarios.'
   },
   {
     id: 'marcario',
-    title: 'Derecho Marcario y Propiedad Intelectual',
+    title: 'Derecho Marcario',
     image: imgMarcario,
-    services: [
-      'Registro de marcas, patentes y derechos de autor.',
-      'Oposiciones y acciones por infracción marcaria.',
-      'Renovaciones y mantenimiento de registros.',
-      'Asesoría en protección de activos intangibles.'
-    ]
+    description: 'Brindamos asesoría en registro, protección y defensa de marcas, nombres comerciales y demás signos distintivos ante las autoridades competentes, así como en oposición e infracción marcaria.'
   },
   {
     id: 'notarial',
-    title: 'Derecho Notarial y Registral',
+    title: 'Derecho Notarial Registral',
     image: imgNotarial,
-    services: [
-      'Asesoría en levantamiento de observaciones registrales.',
-      'Inscripción de actos y contratos en Registros Públicos.',
-      'Independizaciones y declaratorias de fábrica.',
-      'Trámites notariales diversos.'
-    ]
+    description: 'Asesoramos en trámites notariales y registrales, incluyendo elaboración de escrituras públicas, constitución de garantías, sucesiones, poderes, rectificaciones y procedimientos ante SUNARP.'
   },
   {
     id: 'societario',
     title: 'Derecho Societario',
     image: imgSocietario,
-    services: [
-      'Constitución y estructuración de sociedades.',
-      'Aumentos y reducciones de capital.',
-      'Elaboración de actas y actualización de libros societarios.',
-      'Asesoría a directorios y juntas generales de accionistas.'
-    ]
+    description: 'Brindamos asesoría en constitución de sociedades, acuerdos de accionistas, juntas generales, aumento y reducción de capital, reorganizaciones societarias, responsabilidad de directores y cumplimiento de obligaciones corporativas.'
   },
   {
     id: 'proteccion',
-    title: 'Derecho de Protección al Consumidor',
+    title: 'Derecho de Protección del Consumidor',
     image: imgProteccion,
-    services: [
-      'Defensa ante procedimientos de INDECOPI.',
-      'Asesoría preventiva en publicidad comercial.',
-      'Libro de reclamaciones y atención de quejas.',
-      'Políticas de atención al cliente.'
-    ]
+    description: 'Asesoramos a empresas en el cumplimiento de normas de protección al consumidor, atención de reclamos y defensa en procedimientos administrativos ante INDECOPI.'
   },
   {
     id: 'cobranza',
-    title: 'Recuperación de Cartera y Cobranza Judicial',
+    title: 'Recuperación de Carteras y Cobranza Judicial',
     image: imgRecuperacion,
-    services: [
-      'Cobranza extrajudicial y persuasiva.',
-      'Procesos de ejecución de garantías.',
-      'Medidas cautelares (embargos, secuestros).',
-      'Gestión integral de morosidad.'
-    ]
+    description: 'Ofrecemos servicios de recuperación de créditos y cobranza judicial y extrajudicial, diseñando estrategias eficientes para la recuperación de cartera morosa y representación en procesos ejecutivos y de obligación de dar suma de dinero.'
   }
 ];
 
@@ -220,7 +141,7 @@ const AreasDePractica = () => {
             <div className="practice-text-col">
               <h2>{practice.title}</h2>
               <p className="practice-services-text" style={{ textAlign: 'justify', fontSize: '1.1rem', color: '#4b5563', lineHeight: '1.8' }}>
-                {practice.services.join(' ')}
+                {practice.description}
               </p>
             </div>
           </div>
