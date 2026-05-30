@@ -85,7 +85,7 @@
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background-image: url('./assets/bannerinicio.png');
+  background-image: url('./assets/optimizado2.jfif');
   background-size: cover;
   background-position: center;
   position: relative;
@@ -1223,7 +1223,7 @@
   padding: 6rem 2rem;
   background-color: var(--primary-navy);
   color: var(--bg-white);
-  background-image: url('./assets/fondoporcentaje.png');
+  background-image: url('./assets/optimizado1.jfif');
   background-size: cover;
   background-position: center;
   background-attachment: fixed; /* Efecto Parallax */
