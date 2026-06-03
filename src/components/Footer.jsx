@@ -35,7 +35,14 @@ const Footer = () => {
               </span>
             </h4>
             <p>+51 928 144 703 / +51 906 093 447</p>
-            <p>contacto@quintanayquinde.com</p>
+            <p style={{ display: 'flex', flexDirection: 'column', gap: '0.2rem' }}>
+              <a href="mailto:gaquinde@quintanaquindeabogados.com" className="email-link" style={{ color: 'inherit', textDecoration: 'none' }}>
+                gaquinde@quintanaquindeabogados.com
+              </a>
+              <a href="mailto:jquintana@quintanaquindeabogados.com" className="email-link" style={{ color: 'inherit', textDecoration: 'none' }}>
+                jquintana@quintanaquindeabogados.com
+              </a>
+            </p>
             <p>Lunes a Viernes de 8:00am – 6:00pm</p>
             <div className="social-links" style={{ display: 'flex', gap: '1rem', marginTop: '1.5rem' }}>
               <a href="https://www.facebook.com/profile.php?id=61560288190019" target="_blank" rel="noopener noreferrer" aria-label="Facebook" style={{ width: '35px', height: '35px', display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: 'rgba(255,255,255,0.1)', borderRadius: '50%', transition: 'all 0.3s ease', color: 'white' }}>

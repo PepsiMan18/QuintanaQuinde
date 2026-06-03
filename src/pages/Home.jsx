@@ -5,6 +5,7 @@ import AboutUs from '../components/AboutUs';
 import Stats from '../components/Stats';
 import Services from '../components/Services';
 import Testimonials from '../components/Testimonials';
+import Partners from '../components/Partners';
 import Contact from '../components/Contact';
 
 const Home = () => {
@@ -32,6 +33,7 @@ const Home = () => {
       <Stats />
       <Services />
       <Testimonials />
+      <Partners />
       <Contact />
     </main>
   );
