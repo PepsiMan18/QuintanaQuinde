@@ -1049,7 +1049,7 @@
 
 .practice-hero {
   background-color: var(--primary-navy);
-  background-image: linear-gradient(rgba(19, 28, 51, 0.75), rgba(19, 28, 51, 0.95)), url('./assets/lawyerbanner.jpg');
+  background-image: linear-gradient(rgba(19, 28, 51, 0.75), rgba(19, 28, 51, 0.95)), url('./assets/bannerinicio2.png');
   background-size: cover;
   background-position: center;
   background-attachment: fixed; /* Efecto Parallax */
