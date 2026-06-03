@@ -36,10 +36,10 @@ const Footer = () => {
             </h4>
             <p>+51 928 144 703 / +51 906 093 447</p>
             <p style={{ display: 'flex', flexDirection: 'column', gap: '0.2rem' }}>
-              <a href="mailto:gaquinde@quintanaquindeabogados.com" className="email-link" style={{ color: 'inherit', textDecoration: 'none' }}>
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=gaquinde@quintanaquindeabogados.com" target="_blank" rel="noopener noreferrer" className="email-link" style={{ color: 'inherit', textDecoration: 'none' }}>
                 gaquinde@quintanaquindeabogados.com
               </a>
-              <a href="mailto:jquintana@quintanaquindeabogados.com" className="email-link" style={{ color: 'inherit', textDecoration: 'none' }}>
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=jquintana@quintanaquindeabogados.com" target="_blank" rel="noopener noreferrer" className="email-link" style={{ color: 'inherit', textDecoration: 'none' }}>
                 jquintana@quintanaquindeabogados.com
               </a>
             </p>
