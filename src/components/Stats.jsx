@@ -56,9 +56,9 @@ const Stats = () => {
   // Datos ajustados para el primer año de operaciones
   const statsData = [
     { label: 'Socios Comerciales', value: 15, suffix: '+', icon: BriefcaseIcon },
-    { label: 'Casos Resueltos', value: 96, suffix: '%', icon: ScaleIcon },
+    { label: 'Casos Resueltos', value: 100, suffix: '%', icon: ScaleIcon },
     { label: 'Clientes Satisfechos', value: 85, suffix: '+', icon: UsersIcon },
-    { label: 'Casos Ganados', value: 94, suffix: '%', icon: TrophyIcon },
+    { label: 'Casos Ganados', value: 100, suffix: '%', icon: TrophyIcon },
   ];
 
   return (
