@@ -5,10 +5,10 @@ import cliente3 from '../assets/cliente3.png';
 import cliente4 from '../assets/cliente4.png';
 
 const partnersData = [
-  { id: 1, name: "Ministerio de Justicia", logo: cliente1, url: "https://www.gob.pe/minjus" },
-  { id: 2, name: "Ministerio Público", logo: cliente2, url: "https://www.gob.pe/mpfn" },
-  { id: 3, name: "Colegio de Abogados de Lima", logo: cliente3, url: "https://www.cal.org.pe/" },
-  { id: 4, name: "MAC", logo: cliente4, url: "https://www.mac.pe/" }
+  { id: 1, name: "ViguDent", logo: cliente1 },
+  { id: 2, name: "Bro Burger", logo: cliente2 },
+  { id: 3, name: "INDECOR", logo: cliente3 },
+  { id: 4, name: "Aletse Accounting", logo: cliente4 }
 ];
 
 const Partners = () => {
@@ -18,7 +18,7 @@ const Partners = () => {
   return (
     <section className="partners-section">
       <div className="container">
-        <h2 className="partners-title">Enlaces de Interés</h2>
+        <h2 className="partners-title">Nuestros Clientes</h2>
         <div style={{
           width: '60px',
           height: '3px',
@@ -27,22 +27,19 @@ const Partners = () => {
           borderRadius: '2px'
         }}></div>
         <p className="partners-subtitle">
-          En esta sección podrá encontrar los enlaces a los portales web de diferentes entidades del sector público, que son relevantes para la gestión de trámites legales.
+          Empresas y organizaciones que confían en nuestra firma para recibir asesoría legal de excelencia y soluciones estratégicas efectivas.
         </p>
 
         <div className="partners-carousel-container">
           <div className="partners-track">
             {doubledPartners.map((partner, index) => (
-              <a 
-                href={partner.url} 
-                target="_blank" 
-                rel="noopener noreferrer" 
+              <div 
                 key={`${partner.id}-${index}`}
                 className="partner-logo-wrapper"
-                title={`Visitar ${partner.name}`}
+                title={partner.name}
               >
                 <img src={partner.logo} alt={partner.name} />
-              </a>
+              </div>
             ))}
           </div>
         </div>
