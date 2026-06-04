@@ -5,7 +5,7 @@ import cliente3 from '../assets/cliente3.png';
 import cliente4 from '../assets/cliente4.png';
 import cliente5 from '../assets/Cliente5.PNG';
 import cliente6 from '../assets/Cliente6.png';
-import cliente7 from '../assets/cliente7.jpeg';
+import cliente7 from '../assets/cliente7.png';
 
 const partnersData = [
   { id: 1, name: "ViguDent", logo: cliente1 },
@@ -39,7 +39,7 @@ const Partners = () => {
         <div className="partners-carousel-container">
           <div className="partners-track">
             {doubledPartners.map((partner, index) => (
-              <div 
+              <div
                 key={`${partner.id}-${index}`}
                 className="partner-logo-wrapper"
                 title={partner.name}
