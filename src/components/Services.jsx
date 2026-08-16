@@ -14,7 +14,7 @@ import imgNotarial from '../assets/derechonotarial.jpg';
 import imgProteccion from '../assets/derechoproteccion.jpg';
 import imgSocietario from '../assets/derechosocietario.jpg';
 import imgRecuperacion from '../assets/recuperacioncartera.jpg';
-import imgOficialCumplimiento from '../assets/oficialdecum.jfif';
+import imgOficialCumplimiento from '../assets/oficialdecum2.jpeg';
 
 const Services = () => {
   const carouselRef = useRef(null);
