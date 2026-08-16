@@ -13,6 +13,7 @@ import imgNotarial from '../assets/derechonotarial.jpg';
 import imgProteccion from '../assets/derechoproteccion.jpg';
 import imgSocietario from '../assets/derechosocietario.jpg';
 import imgRecuperacion from '../assets/recuperacioncartera.jpg';
+import imgOficialCumplimiento from '../assets/oficialdecum.jfif';
 
 const practices = [
   {
@@ -92,6 +93,12 @@ const practices = [
     title: 'Derecho de Protección del Consumidor',
     image: imgProteccion,
     description: 'Asesoramos a empresas en el cumplimiento de normas de protección al consumidor, atención de reclamos y defensa en procedimientos administrativos ante INDECOPI.'
+  },
+  {
+    id: 'oficial-cumplimiento',
+    title: 'Oficial de Cumplimiento',
+    image: imgOficialCumplimiento,
+    description: 'Implementamos y supervisamos modelos de prevención de delitos, gestión de riesgos normativos y cumplimiento de obligaciones legales para proteger a su organización de sanciones administrativas y penales.'
   },
   {
     id: 'cobranza',
