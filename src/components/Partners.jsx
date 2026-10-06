@@ -7,6 +7,7 @@ import cliente5 from '../assets/Cliente5.PNG';
 import cliente6 from '../assets/Cliente6.png';
 import cliente7 from '../assets/cliente7.png';
 import cliente8 from '../assets/induhealth.jpeg';
+import cliente9 from '../assets/empresa12.jpg';
 
 const partnersData = [
   { id: 1, name: "ViguDent", logo: cliente1 },
@@ -16,7 +17,8 @@ const partnersData = [
   { id: 5, name: "Cliente 5", logo: cliente5 },
   { id: 6, name: "Cliente 6", logo: cliente6 },
   { id: 7, name: "Cliente 7", logo: cliente7 },
-  { id: 8, name: "Induhealth", logo: cliente8 }
+  { id: 8, name: "Induhealth", logo: cliente8 },
+  { id: 9, name: "Empresa 12", logo: cliente9 }
 ];
 
 const Partners = () => {
